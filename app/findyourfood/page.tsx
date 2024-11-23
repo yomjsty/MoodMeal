@@ -57,25 +57,14 @@ export default function FindYourFood() {
 
     return (
         <>
-
             <main className="min-h-screen relative">
                 <div className="relative z-10 pt-36 overflow-hidden">
-                    {/* <div
-                        className="absolute inset-0 z-0"
-                        style={{
-                            backgroundImage: "url('/landingpage-photo.jpg')",
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
-                        }}
-                    >
-                        <div className="absolute inset-0 bg-black/20" />
-                    </div> */}
                     <PageBackground />
                     <div className="relative z-10 max-w-7xl mx-auto px-4 pb-12">
                         <h1 className="text-4xl md:text-6xl font-bold mb-8 max-w-4xl text-balance text-white">
                             Bagaimana cara kerjanya?
                         </h1>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                             <Card className="">
                                 <CardHeader>
                                     <CardTitle>1. Pilih Mood</CardTitle>
@@ -94,7 +83,7 @@ export default function FindYourFood() {
                             </Card>
                             <Card className="">
                                 <CardHeader>
-                                    <CardTitle>Mode Diet / Alergi?</CardTitle>
+                                    <CardTitle>3. Mode Diet / Alergi?</CardTitle>
                                 </CardHeader>
                                 <CardContent>
                                     <p className="text-gray-600">Sesuaikan dengan kebutuhan diet atau alergi yang kamu miliki.</p>
@@ -102,7 +91,7 @@ export default function FindYourFood() {
                             </Card>
                             <Card className="">
                                 <CardHeader>
-                                    <CardTitle>Dapatkan Rekomendasi</CardTitle>
+                                    <CardTitle>4. Dapatkan Rekomendasi</CardTitle>
                                 </CardHeader>
                                 <CardContent>
                                     <p className="text-gray-600">Setelah memilih preferensi, kami akan mencarikan rekomendasi makanan terbaik untukmu.</p>
@@ -112,11 +101,8 @@ export default function FindYourFood() {
                     </div>
                 </div>
                 <div className="max-w-7xl mx-auto px-4 py-8 space-y-8">
-                    {/* Mood Selection */}
                     <div className="flex gap-8 flex-wrap md:flex-nowrap">
-                        {/* Left side - Form */}
                         <div className="w-full md:w-2/3 space-y-8">
-                            {/* Mood Selection */}
                             <div className="space-y-4">
                                 <h2 className="text-2xl font-semibold">Pilih Mood Kamu</h2>
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -134,7 +120,6 @@ export default function FindYourFood() {
                                 </div>
                             </div>
 
-                            {/* Food Type */}
                             <div className="space-y-4">
                                 <h2 className="text-2xl font-semibold">Jenis Makanan <span className="text-xs text-gray-400 font-normal">(Opsional)</span></h2>
                                 <Input
@@ -146,7 +131,6 @@ export default function FindYourFood() {
                                 />
                             </div>
 
-                            {/* Diet/Allergy */}
                             <div className="space-y-4">
                                 <h2 className="text-2xl font-semibold">Mode Diet / Alergi</h2>
                                 <RadioGroup
@@ -178,7 +162,6 @@ export default function FindYourFood() {
                                 </RadioGroup>
                             </div>
 
-                            {/* Submit Button */}
                             <div className="pt-4">
                                 <Button
                                     size="lg"
@@ -191,7 +174,6 @@ export default function FindYourFood() {
                             </div>
                         </div>
 
-                        {/* Right side - Result */}
                         <div className="w-full md:w-1/3">
                             <div className="sticky top-24 bg-white rounded-lg border p-6 space-y-4">
                                 <h2 className="text-2xl font-semibold">Hasil Rekomendasi</h2>
