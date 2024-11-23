@@ -202,7 +202,7 @@ export default function FindYourFood() {
                                     </div>
                                 ) : (
                                     <p className="text-gray-600">
-                                        Hasil rekomendasi makanan akan muncul di sini setelah kamu mengisi preferensi di sebelah kiri.
+                                        Hasil rekomendasi makanan akan muncul di sini.
                                     </p>
                                 )}
                             </div>
